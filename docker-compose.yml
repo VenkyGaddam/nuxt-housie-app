@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  housie:
+    build:
+      context: . # Use the current directory as the build context
+      dockerfile: Dockerfile # Specify the Dockerfile (optional if named Dockerfile)
+    image: housie:latest # Name the local image as 'housie:latest'
+    container_name: housie # Name the container 'housie'
+    ports:
+      - '7549:80' # Map port 7549 on the host to port 3000 in the container
+    environment:
+      NODE_ENV: production # Optional: Set environment variables if needed
+    restart: unless-stopped # Optional: Restart policy
