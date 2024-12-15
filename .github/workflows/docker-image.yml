@@ -32,4 +32,37 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ndrdmarshmallow/housie:latest, ndrdmarshmallow/housie:1.0.0
+          tags: ndrdmarshmallow/housie:latest, ndrdmarshmallow/housie:${{ github.sha }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: SSH into remote server and deploy
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.SERVER_HOST }} # Server host (IP or domain) stored in GitHub Secrets
+          username: ${{ secrets.SERVER_USER }} # Username to log into the server (also from Secrets)
+          key: ${{ secrets.SERVER_SSH_KEY }} # The private key stored in Secrets (e.g., ~/.ssh/id_rsa)
+          port: 22
+          script: |
+            echo "🔄 Navigating to Docker Compose directory"
+            cd /var/apps/housie
+
+            echo "💥 Stopping and removing old containers"
+            docker compose down || echo "No containers to stop"
+
+            echo "📦 Pulling the latest Docker image"
+            docker compose pull
+
+            echo "🚀 Spinning up new containers"
+            docker compose up -d
+
+            echo "🧹 Cleaning up unused Docker resources"
+            docker system prune -f
+
+            echo "✅ Deployment complete"
