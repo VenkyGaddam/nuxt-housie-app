@@ -44,6 +44,7 @@ onMounted(() => {
 
         <div class="flex flex-row gap-2.5 items-center">
           <ColorPicker />
+          {{ isDark }}
           <UButton
             :icon="
               isDark
@@ -56,11 +57,11 @@ onMounted(() => {
             aria-label="Theme"
             @click="isDark = !isDark"
             :class="{
-              'transition-transform  duration-500 ease-in-out': true,
-              'rotate-90': !isDark,
-              '-rotate-90': isDark,
-              'opacity-100': !isDark,
-              'opacity-70': isDark,
+              'transition-transform duration-500 ease-in-out opacity-100': true,
+              'translate-y-0': isDark, // No translation when dark
+              'translate-y-10': !isDark, // Slide in from below when light
+              'opacity-100': isDark,
+              'opacity-70': !isDark,
             }"
           />
         </div>
