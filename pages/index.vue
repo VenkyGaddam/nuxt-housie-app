@@ -16,6 +16,14 @@ const currentNumber = ref();
 const buttonText = ref("Start");
 selectedNumbers.value = [];
 
+const colorClasses = [
+  "bg-primary-50",
+  "bg-primary-100",
+  "bg-primary-200",
+  "bg-primary-300",
+  "bg-primary-400",
+];
+
 // Settings state
 const automaticMode = ref(false);
 const callOutDelayOptions: number[] = [3, 5, 10, 15, 30, 60];
@@ -464,11 +472,12 @@ onBeforeUnmount(() => {
 
       <div class="flex flex-row gap-2.5 mt-auto">
         <div
-          v-for="num in selectedNumbers.slice(-5)"
+          v-for="(num, index) in selectedNumbers.slice(-5)"
           :key="num"
-          class="flex items-center justify-center w-10 h-10 border-2 border-primary-500 text-md rounded-lg"
+          :class="colorClasses[index]"
+          class="flex items-center justify-center w-10 h-10 text-md rounded-lg"
         >
-          {{ num }}
+          <span class="text-primary-900 text-semibold">{{ num }}</span>
         </div>
       </div>
     </div>
@@ -529,10 +538,10 @@ onBeforeUnmount(() => {
         />
       </UButtonGroup>
       <UButton
-        class="px-16 lg:px-24 mt-5"
+        class="px-16 lg:px-24"
         :disabled="gameState == GameState.NOT_STARTED"
         label="Reset Game"
-        variant="outline"
+        variant="ghost"
         color="red"
         size="xl"
         @click="resetGame"

@@ -1,11 +1,5 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-const colorMode = useColorMode();
-import colors from "#tailwind-config/theme/colors";
-
-const color = computed(() =>
-  colorMode.value === "dark" ? (colors as any)[appConfig.ui.gray][900] : "white"
-);
 
 useHead({
   title: appConfig.title,
