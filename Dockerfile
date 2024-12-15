@@ -16,7 +16,7 @@ COPY --link . .
 RUN npm run generate
 
 # Stage 2: Serve the static site with nginx
-FROM nginx:stable-alpine as serve
+FROM nginx:1.26-alpine-slim as serve
 
 # Copy the generated static files to the nginx web root
 COPY --from=build /app/.output/public /usr/share/nginx/html

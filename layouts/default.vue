@@ -1,18 +1,9 @@
 <script setup lang="ts">
 import ColorPicker from "~/components/theme-picker/ColorPicker.vue";
+import ThemeChanger from "~/components/theme-picker/ThemeChanger.vue";
 
-const colorMode = useColorMode();
 const appConfig = useAppConfig();
 
-// Dark mode toggle
-const isDark = computed({
-  get() {
-    return colorMode.preference == "dark";
-  },
-  set() {
-    colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
-  },
-});
 const isVisible = ref(false);
 
 onMounted(() => {
@@ -44,26 +35,7 @@ onMounted(() => {
 
         <div class="flex flex-row gap-2.5 items-center">
           <ColorPicker />
-          {{ isDark }}
-          <UButton
-            :icon="
-              isDark
-                ? 'i-line-md:sunny-filled-loop-to-moon-filled-loop-transition'
-                : 'i-material-symbols:light-mode-rounded'
-            "
-            color="gray"
-            size="md"
-            variant="ghost"
-            aria-label="Theme"
-            @click="isDark = !isDark"
-            :class="{
-              'transition-transform duration-500 ease-in-out opacity-100': true,
-              'translate-y-0': isDark, // No translation when dark
-              'translate-y-10': !isDark, // Slide in from below when light
-              'opacity-100': isDark,
-              'opacity-70': !isDark,
-            }"
-          />
+          <ThemeChanger />
         </div>
       </div>
     </div>
