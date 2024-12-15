@@ -17,6 +17,10 @@ useHead({
       name: "viewport",
       content: "width=device-width, initial-scale=1",
     },
+    {
+      name: "google-site-verification",
+      content: "_YMH-3o88I9HanvBOqpF_4ueRFGtYK5qrViWowSOid8",
+    },
   ],
   bodyAttrs: {
     class: "no-scrollbar bg-gray-100 dark:bg-gray-900",
@@ -24,6 +28,13 @@ useHead({
   htmlAttrs: {
     lang: "en",
   },
+  script: [
+    {
+      src: "https://cloud.umami.is/script.js",
+      defer: true,
+      "data-website-id": "4052c5f7-ab12-4381-a0ec-717ef86b6137",
+    },
+  ],
 });
 
 useSeoMeta({
