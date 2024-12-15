@@ -122,6 +122,14 @@ watch(
               off-icon="i-heroicons-solid:speaker-x-mark"
             />
           </UFormGroup>
+
+          <div>
+            <NuxtLink
+              to="/terms-and-conditions"
+              class="text-blue-500 hover:underline"
+              >Terms and Conditions</NuxtLink
+            >
+          </div>
         </div>
       </template>
     </UCard>

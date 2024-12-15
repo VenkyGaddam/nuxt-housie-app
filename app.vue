@@ -7,8 +7,6 @@ const color = computed(() =>
   colorMode.value === "dark" ? (colors as any)[appConfig.ui.gray][900] : "white"
 );
 
-console.log(color.value);
-
 useHead({
   title: appConfig.title,
   meta: [
