@@ -31,7 +31,6 @@ const props = defineProps({
     :ui="{
       height: 'h-screen max-h-dvh',
     }"
-    prevent-close
   >
     <UCard
       class="flex flex-col flex-1"
