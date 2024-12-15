@@ -123,12 +123,15 @@ watch(
             />
           </UFormGroup>
 
-          <div>
+          <div class="mt-16">
             <NuxtLink
               to="/terms-and-conditions"
-              class="text-blue-500 hover:underline"
-              >Terms and Conditions</NuxtLink
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
             >
+              Terms and Conditions
+            </NuxtLink>
           </div>
         </div>
       </template>
