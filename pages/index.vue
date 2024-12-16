@@ -406,12 +406,10 @@ const speakNumber = (number: number) => {
 
 // Calculate font size dynamically based on viewport dimensions
 const updateElementSizes = () => {
-  const size = Math.floor(
-    Math.max(window.innerWidth, window.innerHeight) / 2.5
-  ); // You can adjust the divisor as per your needs
-  size >= 200
-    ? (computedFontSize.value = 200)
-    : (computedFontSize.value = size);
+  const size = Math.floor(Math.min(window.innerWidth, window.innerHeight) / 2); // You can adjust the divisor as per your needs
+  size >= 300
+    ? (computedFontSize.value = 300)
+    : (computedFontSize.value = size + 25);
 
   // on wide screens open sliders on right
   window.innerWidth >= 640
@@ -450,6 +448,7 @@ onBeforeUnmount(() => {
     class="flex flex-col h-full gap-5 overflow-auto select-none transform transition-all duration-[300ms] ease-in-out delay-[250ms] translate-y-10 opacity-0"
     :class="{ 'translate-y-0 opacity-100': isVisible }"
   >
+    <!-- Generated number + last 5 numbers -->
     <div
       class="flex-1 min-h-[50vh] flex flex-col justify-center items-center overflow-auto"
     >
@@ -470,18 +469,18 @@ onBeforeUnmount(() => {
         />
       </div>
 
-      <div class="flex flex-row gap-2.5 mt-auto">
+      <div class="flex flex-row gap-2.5">
         <div
           v-for="(num, index) in selectedNumbers.slice(-5)"
           :key="num"
           :class="colorClasses[index]"
           class="flex items-center justify-center w-10 h-10 text-md rounded-lg"
         >
-          <span class="text-primary-900 text-semibold">{{ num }}</span>
+          <span class="text-primary-900 font-semibold">{{ num }}</span>
         </div>
       </div>
     </div>
-
+    <!-- Buttons to handle the game -->
     <div class="flex flex-col items-center justify-center gap-5 mb-auto">
       <UButton
         class="px-16 lg:px-24"

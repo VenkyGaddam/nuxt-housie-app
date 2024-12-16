@@ -130,7 +130,7 @@ watch(
               rel="noopener noreferrer"
               class="hover:underline"
             >
-              Terms and Conditions
+              <span class="text-sm">Terms and Conditions</span>
             </NuxtLink>
           </div>
         </div>

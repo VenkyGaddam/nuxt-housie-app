@@ -33,7 +33,7 @@ const props = defineProps({
       </div>
     </div>
     <div class="text-xl font-bold my-5">History</div>
-    <div class="flex flex-row gap-1 overflow-auto flex-wrap mb-32">
+    <div class="flex flex-row gap-2.5 overflow-auto flex-wrap mb-32">
       <div
         v-for="num in selectedNumbers.slice().reverse()"
         :key="num"

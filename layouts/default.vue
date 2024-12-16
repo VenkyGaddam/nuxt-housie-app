@@ -13,10 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="min-h-dvh flex flex-col">
-    <div
-      class="sticky top-0 py-2 lg:py-2 px-2 lg:mr-2 backdrop-blur-md z-10 transform transition-all duration-[300ms] ease-in-out delay-[100ms] -translate-y-10 opacity-0"
-      :class="{ 'translate-y-0 opacity-100': isVisible }"
-    >
+    <div class="sticky top-0 py-2 lg:py-2 px-2 lg:mr-2 backdrop-blur-md z-10">
       <div class="flex flex-row gap-2 items-center justify-between">
         <ULink to="/">
           <div class="flex flex-row items-end gap-1">
