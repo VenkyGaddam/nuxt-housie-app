@@ -486,7 +486,7 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <!-- Buttons to handle the game -->
-    <div class="flex flex-col items-center justify-center gap-5 mb-auto">
+    <div class="flex flex-col items-center justify-center gap-5 mt-auto">
       <UButton
         class="px-16 lg:px-24"
         :disabled="gameState == GameState.GAME_OVER || debounce"

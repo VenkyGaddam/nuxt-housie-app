@@ -3,12 +3,6 @@ import ColorPicker from "~/components/theme-picker/ColorPicker.vue";
 import ThemeChanger from "~/components/theme-picker/ThemeChanger.vue";
 
 const appConfig = useAppConfig();
-
-const isVisible = ref(false);
-
-onMounted(() => {
-  isVisible.value = true;
-});
 </script>
 
 <template>
