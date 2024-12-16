@@ -122,17 +122,26 @@ watch(
               off-icon="i-heroicons-solid:speaker-x-mark"
             />
           </UFormGroup>
-
-          <div class="mt-16">
-            <NuxtLink
-              to="/terms-and-conditions"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:underline"
-            >
-              <span class="text-sm">Terms and Conditions</span>
-            </NuxtLink>
-          </div>
+        </div>
+      </template>
+      <template #footer>
+        <div class="flex flex-row justify-between mx-auto">
+          <NuxtLink
+            to="/terms-and-conditions"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
+          >
+            <span class="text-sm">Terms and Conditions</span>
+          </NuxtLink>
+          <NuxtLink
+            to="/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
+          >
+            <span class="text-sm">About</span>
+          </NuxtLink>
         </div>
       </template>
     </UCard>

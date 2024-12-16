@@ -431,6 +431,9 @@ onMounted(() => {
 
   // Update font size on window resize
   window.addEventListener("resize", updateElementSizes);
+
+  window.addEventListener("blur", pauseGame);
+  window.addEventListener("pagehide", pauseGame); // iOS-specific
 });
 
 // Clean up interval & event listener on unmount
@@ -440,6 +443,8 @@ onBeforeUnmount(() => {
   }
 
   window.removeEventListener("resize", updateElementSizes);
+  window.removeEventListener("blur", () => {});
+  window.removeEventListener("pagehide", () => {}); // iOS-specific
 });
 </script>
 

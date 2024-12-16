@@ -1,153 +1,96 @@
 <template>
   <UContainer>
-    <h1 class="text-4xl font-bold text-center mb-8">Terms and Conditions</h1>
+    <h1 class="text-3xl font-bold text-center mb-8">Terms and Conditions</h1>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">1. Acceptance of Terms</h2>
+      <h2 class="text-2xl font-semibold">1. License Grant</h2>
       <p>
-        By accessing or using our website, application, or services, you agree
-        to be bound by these Terms and Conditions and our Privacy Policy. If you
-        do not agree with any part of these terms, you must discontinue use of
-        our services.
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">2. Changes to Terms</h2>
+      <h2 class="text-2xl font-semibold">2. Conditions</h2>
       <p>
-        We reserve the right to modify or replace these Terms at any time. It is
-        your responsibility to review the Terms periodically. Your continued use
-        of our services after any changes constitutes acceptance of the new
-        Terms.
+        The above copyright notice and this permission notice shall be included
+        in all copies or substantial portions of the Software.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">3. User Accounts</h2>
+      <h2 class="text-2xl font-semibold">3. Warranty Disclaimer</h2>
       <p>
-        To use certain features of our service, you may be required to create an
-        account. You are responsible for safeguarding your account credentials
-        and for any activity under your account. We are not liable for any loss
-        or damage resulting from unauthorized use of your account.
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+        TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">4. User Responsibilities</h2>
+      <h2 class="text-2xl font-semibold">4. Use of the Software</h2>
       <p>
-        You agree to use our service only for lawful purposes and in compliance
-        with all applicable laws.
-      </p>
-      <p>
-        You must not use the service to engage in fraudulent, harmful, or
-        abusive activities.
+        You are free to use, copy, modify, merge, publish, distribute,
+        sublicense, and sell copies of the Software as long as the above
+        conditions are met. The Software may be used for personal, commercial,
+        or educational purposes.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">5. Intellectual Property</h2>
+      <h2 class="text-2xl font-semibold">5. Limitations of Liability</h2>
       <p>
-        All content, trademarks, logos, and other intellectual property
-        displayed on our site are the property of the company or its licensors.
-        You may not use, copy, modify, or distribute any content without our
-        prior written permission.
+        In no event will the authors or copyright holders be liable for any
+        damages, including but not limited to loss of data, business
+        interruption, or loss of profits, arising out of the use or inability to
+        use the Software, even if advised of the possibility of such damages.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">6. Restrictions on Use</h2>
-      <p>You agree not to:</p>
-      <ul class="list-disc list-inside text-gray-600">
-        <li>
-          Reverse engineer, decompile, or disassemble any portion of our website
-          or services.
-        </li>
-        <li>
-          Interfere with or disrupt the security or performance of the website
-          or services.
-        </li>
-        <li>
-          Upload or distribute viruses, malware, or any other harmful software.
-        </li>
-      </ul>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">7. Third-Party Services</h2>
+      <h2 class="text-2xl font-semibold">6. Termination</h2>
       <p>
-        Our service may contain links to third-party websites or services. We do
-        not endorse or assume responsibility for the content, terms, or privacy
-        practices of these third-party services.
+        This license shall remain in effect until terminated. If you violate any
+        of the terms and conditions of this license, your rights under this
+        license will automatically terminate.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">8. Termination</h2>
+      <h2 class="text-2xl font-semibold">7. Governing Law</h2>
       <p>
-        We reserve the right to terminate or suspend your access to our services
-        at any time, without prior notice, for any reason, including a breach of
-        these Terms.
+        This License shall be governed by and interpreted in accordance with the
+        laws of [Your Country/State], without regard to its conflict of law
+        principles.
       </p>
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold">9. Limitation of Liability</h2>
-      <p>
-        To the fullest extent permitted by law, we are not liable for any
-        indirect, incidental, or consequential damages resulting from your use
-        of our services.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">10. Indemnification</h2>
-      <p>
-        You agree to indemnify and hold us harmless from any claims, losses,
-        liabilities, or expenses arising from your breach of these Terms or
-        misuse of our services.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">11. Disclaimer of Warranties</h2>
-      <p>
-        Our services are provided "as is" and "as available" without any
-        warranties of any kind, express or implied, including but not limited to
-        warranties of merchantability, fitness for a particular purpose, and
-        non-infringement.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">12. Governing Law</h2>
-      <p>
-        These Terms and any disputes arising from them are governed by and
-        construed in accordance with the laws of [Your Country/State], without
-        regard to its conflict of law principles.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">13. Dispute Resolution</h2>
-      <p>
-        In the event of a dispute, the parties agree to first attempt to resolve
-        the dispute informally. If a resolution cannot be reached, the dispute
-        shall be resolved by arbitration in accordance with the rules of
-        [Arbitration Organization].
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold">14. Contact Information</h2>
+      <h2 class="text-2xl font-semibold">8. Contact Information</h2>
       <p>
         If you have any questions or concerns about these Terms, please contact
-        us at ndrdmarshmallow@gmail.com.
+        us at
+        <a
+          href="mailto:ndrdmarshmallow@gmail.com"
+          class="text-blue-500 hover:underline"
+          >ndrdmarshmallow@gmail.com</a
+        >.
       </p>
     </section>
 
     <p class="my-6 text-center">
-      By using our services, you acknowledge that you have read, understood, and
-      agreed to these Terms and Conditions.
+      By using this software, you acknowledge that you have read, understood,
+      and agreed to these Terms and Conditions, which are governed by the MIT
+      License.
     </p>
   </UContainer>
 </template>

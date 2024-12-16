@@ -14,6 +14,12 @@ useHead({
       content: "_YMH-3o88I9HanvBOqpF_4ueRFGtYK5qrViWowSOid8",
     },
   ],
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+    },
+  ],
   bodyAttrs: {
     class: "no-scrollbar bg-gray-100 dark:bg-gray-900",
   },
@@ -91,5 +97,11 @@ useSeoMeta({
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: 0; /* Firefox */
+}
+</style>
+
+<style global>
+html {
+  font-family: "Inter", sans-serif;
 }
 </style>
