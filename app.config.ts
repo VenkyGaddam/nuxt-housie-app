@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  title: "Tambola / Housie",
+  title: "Tambola",
   description: "Tambola or Housie number generator",
   brandIcon: "i-bi:dice-1-fill",
   ui: {
