@@ -8,18 +8,20 @@ const appConfig = useAppConfig();
 <template>
   <div class="min-h-dvh flex flex-col">
     <div class="sticky top-0 py-2 lg:py-2 px-2 lg:mr-2 backdrop-blur-md z-10">
-      <div class="flex flex-row gap-2 items-center justify-between">
+      <div class="flex flex-row items-center justify-between">
         <ULink to="/">
-          <div class="flex flex-row items-end gap-1">
+          <div class="flex flex-row items-end gap-2">
             <UIcon
               :name="appConfig.brandIcon"
               class="w-12 h-12 text-primary-500"
             />
             <div class="flex flex-col">
-              <span class="text-xl font-semibold text-primary-500">
+              <span class="text-xl text-primary-500 font-semibold">
                 {{ appConfig.title }}
               </span>
-              <span class="text-sm font-semibold"> Numbers generator </span>
+              <span class="text-sm font-normal text-gray-400">
+                numbers picker
+              </span>
             </div>
           </div>
         </ULink>

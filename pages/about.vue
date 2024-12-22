@@ -15,9 +15,7 @@
           <p class="text-lg mb-4">
             Hello! I'm <strong>Venky Gaddam</strong>, a passionate developer
             with a strong focus on creating engaging and interactive web
-            applications. With a solid background in full-stack development, I
-            specialize in building modern, responsive, and intuitive user
-            interfaces.
+            applications. With a little background in web apps development.
           </p>
           <p class="text-lg mb-4">
             This Housie Number Generator app is a fun project to bring the

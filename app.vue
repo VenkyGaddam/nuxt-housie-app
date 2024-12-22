@@ -36,19 +36,22 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Housie|Tambola Number Picker",
+  title: "Tambola Number Picker/Generator",
   description:
     "Generate random Housie or Tambola numbers with ease. A fun and interactive tool for your next game night!",
   keywords:
     "Housie, Tambola, Number Generator, Game Night, Random Picker, Bingo Numbers",
-  ogTitle: "Housie Number Generator",
+  ogTitle: "Tambola Number Generator",
   ogDescription:
-    "The best tool to generate Tambola or Housie numbers instantly!",
-  ogImage: "/web-app-manifest-512x512.png", // Replace with your actual image path
+    "The best webapp to generate Tambola or Housie numbers instantly!",
+  ogImage: "https://housie.myhive.in/web-app-manifest-512x512.png", // Ensure this is an absolute URL
   ogUrl: "https://housie.myhive.in", // Replace with your website URL
   twitterCard: "summary_large_image",
   twitterSite: "@venkygaddam", // Replace with your Twitter handle
   twitterCreator: "@venkygaddam", // Replace with your Twitter handle
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1",
+  author: "Venky Gaddam", // Replace with the author's name
 });
 </script>
 

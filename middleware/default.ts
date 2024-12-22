@@ -5,4 +5,5 @@ export default defineNuxtRouteMiddleware((to, from) => {
 
   if (primaryColor) appConfig.ui.primary = primaryColor;
   if (grayColor) appConfig.ui.gray = grayColor;
+  return;
 });

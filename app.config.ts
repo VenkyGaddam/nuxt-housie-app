@@ -1,7 +1,7 @@
 export default defineAppConfig({
-  title: "Housie/Tambola",
-  description: "Housie or Tambola number generator",
-  brandIcon: "i-game-icons:perspective-dice-one",
+  title: "Tambola / Housie",
+  description: "Tambola or Housie number generator",
+  brandIcon: "i-bi:dice-1-fill",
   ui: {
     primary: "lime",
     gray: "cool",

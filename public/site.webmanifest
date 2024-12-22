@@ -1,6 +1,6 @@
 {
-  "name": "Housie",
-  "short_name": "Housie",
+  "name": "Tambola number picker",
+  "short_name": "Tambola",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
